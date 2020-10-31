@@ -23,7 +23,7 @@ export const HeroHaloBackground = () => {
           backgroundColor: 0x30407,
           xOffset: 0.25,
           yOffset: 0.1,
-          // size: 0.6,
+          size: 0.6,
         })
       );
     }

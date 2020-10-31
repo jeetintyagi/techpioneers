@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { HeroGlobeBackground, HeroHaloBackground } from './HeroHaloBackground';
+import { HeroGlobeBackground, HeroHaloBackground } from './HeroBackgrounds';
 import { Button } from '../ButtonElement';
 import {
   HeroContainer,
