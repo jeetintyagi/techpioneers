@@ -47,7 +47,6 @@ export const InfoRow = styled.div`
   }
 `;
 
-
 export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
@@ -55,7 +54,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-  color: ${({ lightText }) => (lightText ? '#01bf71' : '#010606')};
+  color: ${({primary})=>(primary? '#01BF71' : '#09f' )};
   font-size: 16px;
   line-height: 16px;
   font-weight: 800;

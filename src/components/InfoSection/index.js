@@ -30,7 +30,7 @@ const InfoSection = ({
   fontBig,
   pad,
   dark,
-  img,
+  src,
   alt,
 }) => {
   return (
@@ -40,7 +40,7 @@ const InfoSection = ({
           <InfoRow imgStart={imgStart}>
             <Column1>
               <TextWrapper>
-                <TopLine lightText={lightText}>{topLine}</TopLine>
+                <TopLine primary={primary}>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headLine}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
@@ -64,7 +64,7 @@ const InfoSection = ({
             </Column1>
             <Column2>
               <ImgWrap>
-                <Img src={img} alt={alt} />
+                <Img src={src} alt={alt} />
               </ImgWrap>
             </Column2>
           </InfoRow>
