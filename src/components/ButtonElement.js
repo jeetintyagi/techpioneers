@@ -8,7 +8,7 @@ export const Button = styled((props) => <button {...props} />, link)`
   padding: ${({ bigPad }) => (bigPad ? '14px 48px' : '12px 30px')};
   font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
   color: ${({ dark, primary }) =>
-    dark ? '#010606' : primary ? '#fff' : '#01BF71'};
+    dark ? '#010606' : primary ? '#fff' : '#010606'};
   font-weight: bold;
   outline: none;
   border: none;
@@ -20,8 +20,8 @@ export const Button = styled((props) => <button {...props} />, link)`
 
   &:hover {
     background: ${({ dark, primary }) =>
-      primary ? '#fff' : dark ? '#010606' : '#09f'};
+      primary ? '#fff' : dark ? '#09f' : '#fff'};
     color: ${({ dark, primary }) =>
-      primary ? '#010606' : dark ? '#fff' : '#01BF71'};
+      primary ? '#010606' : dark ? '#fff' : '#010606'};
   }
 `;

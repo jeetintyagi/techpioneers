@@ -22,9 +22,9 @@ export const InfoSectionData1 = {
 
 export const InfoSectionData2 = {
   id: 'about',
-  lightBg: true,
-  lightText: false,
-  darkText: true,
+  lightBg: false,
+  lightText: true,
+  darkText: false,
   topLine: 'Know more about us',
   headLine: 'Department of Computer Science',
   description:
@@ -35,11 +35,11 @@ export const InfoSectionData2 = {
 
   // Button
   ButtonLabel: 'More Details',
-  // primary: true,
+  primary: false,
   bigPad: true,
   fontBig: true,
   pad: true,
-  dark: true,
+  dark: false,
 };
 
 // https://youtu.be/Nl54MJDR2p8?t=8686
