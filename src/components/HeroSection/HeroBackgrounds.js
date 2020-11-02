@@ -20,10 +20,10 @@ export const HeroHaloBackground = () => {
           minHeight: 800.0,
           minWidth: 200.0,
           baseColor: 0x1e232d,
-          backgroundColor: 0x30407,
+          backgroundColor: 0x010606,
           xOffset: 0.25,
           yOffset: 0.1,
-          size: 0.6,
+          size: 0.8,
         })
       );
     }
@@ -47,11 +47,12 @@ export const HeroGlobeBackground = () => {
           gyroControls: false,
           minHeight: 800.0,
           minWidth: 200.0,
-          baseColor: 0x1e232d,
-          backgroundColor: 0x30407,
           xOffset: 0.25,
           yOffset: 0.1,
           size: 0.6,
+          // color: 0x09f,
+          baseColor: 0x1e232d,
+          backgroundColor: 0x010606
         })
       );
     }
