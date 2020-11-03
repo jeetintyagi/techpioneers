@@ -1,4 +1,8 @@
-//InfoSection comprises of About and Discover section
+// InfoSection comprises of About and Discover section
+// below are the props values used to alter their
+// UI & content
+// For ease always make atleast two objects
+// for a section one for dark and light theme
 
 // For about section {dark theme}
 export const AboutSectionData1 = {
@@ -94,4 +98,3 @@ export const DiscoverSectionData2 = {
   pad: true,
   dark: true,
 };
-

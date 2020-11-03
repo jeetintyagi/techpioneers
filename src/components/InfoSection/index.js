@@ -1,3 +1,10 @@
+// InfoSection is a reusable component used as the
+// design model for About and Discover section
+// about and Discover are same in terms of UI / UX
+// **in short this component is highly reusable
+// check the Data.js to know more about the props
+// and their possible values you can play with.
+
 import React from 'react';
 import { Button } from '../ButtonElement';
 import {
