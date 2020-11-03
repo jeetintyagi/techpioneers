@@ -3,7 +3,12 @@ import SideBar from '../components/SideBar/index';
 import NavBar from '../components/NavBar/index';
 import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
-import { InfoSectionData1, InfoSectionData2 } from '../components/InfoSection/Data';
+import {
+  DiscoverSectionData1,
+  DiscoverSectionData2,
+  AboutSectionData1,
+  AboutSectionData2,
+} from '../components/InfoSection/Data';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +22,8 @@ const Home = () => {
       <SideBar isOpen={isOpen} toggleSideBar={toggleSideBar} />
       <NavBar toggleSideBar={toggleSideBar} />
       <HeroSection />
-      <InfoSection {...InfoSectionData2} />
+      <InfoSection {...AboutSectionData1} />
+      <InfoSection {...DiscoverSectionData2} />
     </>
   );
 };
