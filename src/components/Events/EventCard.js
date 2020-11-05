@@ -6,9 +6,9 @@ import {
   EventsP,
 } from './EventsElements';
 
-const EventCard = ({ imgsrc, caption, description }) => {
+const EventCard = ({ to, imgsrc, caption, description }) => {
   return (
-    <EventsCard>
+    <EventsCard to={to}>
       <EventsIcon src={imgsrc} />
       <EventsCaption>{caption}</EventsCaption>
       <EventsP>{description}</EventsP>

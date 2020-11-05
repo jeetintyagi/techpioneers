@@ -1,5 +1,5 @@
 export const ImagixEventContent = {
-  to: '/',
+  to: '/imagixevent',
   imgsrc: '../../images/svg-1.svg',
   caption: 'Lorem ipsum dolor sit amet',
   description:

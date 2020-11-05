@@ -22,4 +22,3 @@ const EventSection = () => {
 };
 
 export default EventSection;
-
