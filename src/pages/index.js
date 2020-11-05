@@ -4,10 +4,10 @@ import NavBar from '../components/NavBar/index';
 import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
 import {
-  DiscoverSectionData1,
-  DiscoverSectionData2,
+  // AnnualReportSectionData1,
+  AnnualReportSectionData2,
   AboutSectionData1,
-  AboutSectionData2,
+  // AboutSectionData2,
 } from '../components/InfoSection/Data';
 
 const Home = () => {
@@ -23,7 +23,7 @@ const Home = () => {
       <NavBar toggleSideBar={toggleSideBar} />
       <HeroSection />
       <InfoSection {...AboutSectionData1} />
-      <InfoSection {...DiscoverSectionData2} />
+      <InfoSection {...AnnualReportSectionData2} />
     </>
   );
 };

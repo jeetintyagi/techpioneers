@@ -41,7 +41,7 @@ const HeroSection = () => {
         <HeroP>Aryabhatta College</HeroP>
         <HeroBtnWrapper>
           <Button
-            to='signup'
+            to='annualReport'
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             bigPad='true'

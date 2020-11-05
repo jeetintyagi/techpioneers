@@ -26,7 +26,7 @@ const NavBar = ({ toggleSideBar }) => {
               <NavLinks to='about'>About</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to='discover'>Discover</NavLinks>
+              <NavLinks to='annualReport'>Annual Report</NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks to='team'>Events</NavLinks>
@@ -35,12 +35,12 @@ const NavBar = ({ toggleSideBar }) => {
               <NavLinks to='team'>Team</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to='signup'>Sign Up</NavLinks>
+              <NavLinks to='blogs'>Blogs</NavLinks>
             </NavItem>
           </NavMenu>
-          <NavBtn>
+          {/* <NavBtn>
             <NavBtnLink to='/signin'>Sign In</NavBtnLink>
-          </NavBtn>
+          </NavBtn> */}
         </NavBarContainer>
       </Nav>
     </>

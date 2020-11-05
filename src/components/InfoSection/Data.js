@@ -1,8 +1,8 @@
-// InfoSection comprises of About and Discover section
+// InfoSection comprises of About and AnnualReport section
 // below are the props values used to alter their
 // UI & content
 // For ease always make atleast two objects
-// for a section one for dark and light theme
+// for a section ,one for dark & another for light theme
 
 // For about section {dark theme}
 export const AboutSectionData1 = {
@@ -10,10 +10,12 @@ export const AboutSectionData1 = {
   lightBg: false,
   lightText: true,
   darkText: false,
+  // content
   topLine: 'Know more about us',
   headLine: 'Department of Computer Science',
   description:
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ad aut alias eius commodi laudantium provident eligendi, aliquid quisquam earum autem unde excepturi saepe porro tenetur, architecto magnam deserunt. Placeat.',
+  // Image
   imgStart: false,
   src: require('../../images/svg-1.svg'),
   alt: 'Tech',
@@ -34,10 +36,14 @@ export const AboutSectionData2 = {
   lightBg: true,
   lightText: false,
   darkText: true,
+
+  // content
   topLine: 'Know more about us',
   headLine: 'Department of Computer Science',
   description:
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ad aut alias eius commodi laudantium provident eligendi, aliquid quisquam earum autem unde excepturi saepe porro tenetur, architecto magnam deserunt. Placeat.',
+
+  // Image
   imgStart: false,
   src: require('../../images/svg-1.svg'),
   alt: 'Team',
@@ -51,17 +57,21 @@ export const AboutSectionData2 = {
   dark: true,
 };
 
-// For discover section {dark theme}
+// For AnnualReport section {dark theme}
 
-export const DiscoverSectionData1 = {
-  id: 'discover',
+export const AnnualReportSectionData1 = {
+  id: 'annualReport',
   lightBg: false,
   lightText: true,
   darkText: false,
+
+  // content
   topLine: 'Know more about us',
   headLine: 'Department of Computer Science',
   description:
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ad aut alias eius commodi laudantium provident eligendi, aliquid quisquam earum autem unde excepturi saepe porro tenetur, architecto magnam deserunt. Placeat.',
+
+  // Image
   imgStart: true,
   src: require('../../images/svg-1.svg'),
   alt: 'Team',
@@ -75,17 +85,21 @@ export const DiscoverSectionData1 = {
   dark: false,
 };
 
-// For discover section {light theme}
+// For AnnualReport section {light theme}
 
-export const DiscoverSectionData2 = {
-  id: 'discover',
+export const AnnualReportSectionData2 = {
+  id: 'annualReport',
   lightBg: true,
   lightText: false,
   darkText: true,
+
+  // content
   topLine: 'Know more about us',
   headLine: 'Department of Computer Science',
   description:
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ad aut alias eius commodi laudantium provident eligendi, aliquid quisquam earum autem unde excepturi saepe porro tenetur, architecto magnam deserunt. Placeat.',
+
+  // Image
   imgStart: true,
   src: require('../../images/svg-1.svg'),
   alt: 'Team',
