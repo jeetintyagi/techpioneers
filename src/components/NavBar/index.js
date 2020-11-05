@@ -26,10 +26,10 @@ const NavBar = ({ toggleSideBar }) => {
               <NavLinks to='about'>About</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to='annualReport'>Annual Report</NavLinks>
+              <NavLinks to='events'>Events</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to='team'>Events</NavLinks>
+              <NavLinks to='annualReport'>Annual Report</NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks to='team'>Team</NavLinks>

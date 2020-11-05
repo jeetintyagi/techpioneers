@@ -9,7 +9,7 @@ import {
   AboutSectionData1,
   // AboutSectionData2,
 } from '../components/InfoSection/Data';
-
+import EventSection from '../components/Events';
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -23,6 +23,7 @@ const Home = () => {
       <NavBar toggleSideBar={toggleSideBar} />
       <HeroSection />
       <InfoSection {...AboutSectionData1} />
+      <EventSection />
       <InfoSection {...AnnualReportSectionData2} />
     </>
   );

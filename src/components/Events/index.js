@@ -1,19 +1,26 @@
 import React from 'react';
+import {
+  EventsContainer,
+  EventsHeading,
+  EventsWrapper,
+  EventsCard,
+  EventsIcon,
+  EventsCaption,
+  EventsP,
+} from './EventsElements';
+import Icon1 from '../../images/svg-1.svg';
 
-const Events = () => {
+const EventSection = () => {
   return (
-    <EventsContainer id='services'>
+    <EventsContainer id='events'>
       <EventsHeading>Events</EventsHeading>
       <EventsWrapper>
         <EventsCard>
           <EventsIcon src={Icon1} />
-          <EventsCaption></EventsCaption>
+          <EventsCaption>Lorem ipsum dolor sit amet</EventsCaption>
           <EventsP>
             {' '}
             consectetur adipisicing elit. Molestias nesciunt quis alias libero
-            dignissimos laborum, fugiat, deserunt nam aperiam temporibus ullam
-            voluptatum quas maiores impedit dolore qui cumque? Reprehenderit,
-            et!
           </EventsP>
         </EventsCard>
         <EventsCard>
@@ -22,9 +29,6 @@ const Events = () => {
           <EventsP>
             {' '}
             consectetur adipisicing elit. Molestias nesciunt quis alias libero
-            dignissimos laborum, fugiat, deserunt nam aperiam temporibus ullam
-            voluptatum quas maiores impedit dolore qui cumque? Reprehenderit,
-            et!
           </EventsP>
         </EventsCard>
         <EventsCard>
@@ -33,9 +37,14 @@ const Events = () => {
           <EventsP>
             {' '}
             consectetur adipisicing elit. Molestias nesciunt quis alias libero
-            dignissimos laborum, fugiat, deserunt nam aperiam temporibus ullam
-            voluptatum quas maiores impedit dolore qui cumque? Reprehenderit,
-            et!
+          </EventsP>
+        </EventsCard>
+        <EventsCard>
+          <EventsIcon src={Icon1} />
+          <EventsCaption>Lorem ipsum dolor sit amet</EventsCaption>
+          <EventsP>
+            {' '}
+            consectetur adipisicing elit. Molestias nesciunt quis alias libero
           </EventsP>
         </EventsCard>
       </EventsWrapper>
@@ -43,4 +52,4 @@ const Events = () => {
   );
 };
 
-export default Events;
+export default EventSection;
