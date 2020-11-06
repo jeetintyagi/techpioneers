@@ -2,6 +2,10 @@ import styled from 'styled-components';
 import { FaTimes } from 'react-icons/fa';
 import { Link as LinkR } from 'react-router-dom';
 import { Link as LinkScroll } from 'react-scroll';
+import { MdInfo, MdEvent } from 'react-icons/md';
+import { HiDocumentReport } from 'react-icons/hi';
+import { RiArticleFill, RiTeamFill } from 'react-icons/ri';
+import { FaGlobeAmericas } from 'react-icons/fa';
 
 export const SideBarContainer = styled.aside`
   position: fixed;
@@ -91,4 +95,37 @@ export const SideBarRoute = styled(LinkR)`
     background: #fff;
     color: #010606;
   }
+`;
+
+export const AboutIcon = styled(MdInfo)`
+  font-size: 20px;
+  margin-right: 10px;
+  &:hover {
+    color: #fff;
+  }
+`;
+
+export const EventsIcon = styled(MdEvent)`
+  font-size: 20px;
+  margin-right: 10px;
+`;
+
+export const ReportIcon = styled(HiDocumentReport)`
+  font-size: 20px;
+  margin-right: 10px;
+`;
+
+export const TeamIcon = styled(RiTeamFill)`
+  font-size: 20px;
+  margin-right: 10px;
+`;
+
+export const BlogsIcon = styled(RiArticleFill)`
+  font-size: 20px;
+  margin-right: 10px;
+`;
+
+export const CelestechIcon = styled(FaGlobeAmericas)`
+  font-size: 20px;
+  margin-right: 10px;
 `;

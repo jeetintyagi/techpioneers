@@ -6,10 +6,15 @@ import {
   SideBarWrapper,
   SideBarMenu,
   SideBarLink,
-  SideBtnWrap,
-  SideBarRoute,
+  AboutIcon,
+  EventsIcon,
+  ReportIcon,
+  TeamIcon,
+  BlogsIcon,
+  CelestechIcon,
+  // SideBtnWrap,
+  // SideBarRoute,
 } from './SideBarElements';
-
 const SideBar = ({ isOpen, toggleSideBar }) => {
   return (
     <>
@@ -20,21 +25,33 @@ const SideBar = ({ isOpen, toggleSideBar }) => {
         <SideBarWrapper>
           <SideBarMenu>
             <SideBarLink to='about' onClick={toggleSideBar}>
+              <AboutIcon />
               About
             </SideBarLink>
-            <SideBarLink to='about' onClick={toggleSideBar}>
-              Discover
+            <SideBarLink to='events' onClick={toggleSideBar}>
+              <EventsIcon />
+              Events
             </SideBarLink>
-            <SideBarLink to='about' onClick={toggleSideBar}>
-              Services
+            <SideBarLink to='annualReport' onClick={toggleSideBar}>
+              <ReportIcon />
+              Annual Report
             </SideBarLink>
-            <SideBarLink to='about' onClick={toggleSideBar}>
-              Sign Up
+            <SideBarLink to='team' onClick={toggleSideBar}>
+              <TeamIcon />
+              Team
+            </SideBarLink>
+            <SideBarLink to='blogs' onClick={toggleSideBar}>
+              <BlogsIcon />
+              Blogs
+            </SideBarLink>
+            <SideBarLink to='celestech' onClick={toggleSideBar}>
+              <CelestechIcon />
+              Celestech
             </SideBarLink>
           </SideBarMenu>
-          <SideBtnWrap>
-            <SideBarRoute to='/signin'>Sign In</SideBarRoute>
-          </SideBtnWrap>
+          {/* <SideBtnWrap>
+            <SideBarRoute to=''></SideBarRoute>
+          </SideBtnWrap> */}
         </SideBarWrapper>
       </SideBarContainer>
     </>

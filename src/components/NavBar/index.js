@@ -8,8 +8,8 @@ import {
   NavItem,
   NavMenu,
   NavLinks,
-  NavBtn,
-  NavBtnLink,
+  // NavBtn,
+  // NavBtnLink,
 } from './NavBarElements';
 
 const NavBar = ({ toggleSideBar }) => {
@@ -23,19 +23,70 @@ const NavBar = ({ toggleSideBar }) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to='about'>About</NavLinks>
+              <NavLinks
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                to='about'
+              >
+                About
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to='events'>Events</NavLinks>
+              <NavLinks
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                to='events'
+              >
+                Events
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to='annualReport'>Annual Report</NavLinks>
+              <NavLinks
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                to='annualReport'
+              >
+                Annual Report
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to='team'>Team</NavLinks>
+              <NavLinks
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                to='team'
+              >
+                Team
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to='blogs'>Blogs</NavLinks>
+              <NavLinks
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                to='blogs'
+              >
+                Blogs
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                to='celestech'
+              >
+                Celestech
+              </NavLinks>
             </NavItem>
           </NavMenu>
           {/* <NavBtn>
