@@ -15,9 +15,6 @@ const EventSection = () => {
         <EventCard {...ImagixEventContent} />
         <EventCard {...ImagixEventContent} />
         <EventCard {...ImagixEventContent} />
-        <EventCard {...ImagixEventContent} />
-        <EventCard {...ImagixEventContent} />
-        <EventCard {...ImagixEventContent} />
       </EventsWrapper>
     </EventsContainer>
   );
