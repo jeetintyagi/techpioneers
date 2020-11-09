@@ -12,7 +12,7 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 860px;
+  height: 800px;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
@@ -54,7 +54,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-  color: ${({primary})=>(primary? '#01BF71' : '#09f' )};
+  color: ${({ primary }) => (primary ? '#01BF71' : '#09f')};
   font-size: 16px;
   line-height: 16px;
   font-weight: 800;
@@ -97,4 +97,8 @@ export const Img = styled.img`
   width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;
+  overflow: hidden;
+  -o-object-fit: scale-down;
+  object-fit: scale-down;
+  object-fit: covered;
 `;

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const EventsContainer = styled.div`
-  height: 900px;
+  height: 1100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,10 +10,10 @@ export const EventsContainer = styled.div`
   background: #010606;
 
   @media screen and (max-width: 768px) {
-    height: 1100px;
+    height: 2000px;
   }
   @media screen and (max-width: 480px) {
-    height: 1300px;
+    height: 2500px;
   }
 `;
 

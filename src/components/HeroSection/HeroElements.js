@@ -49,7 +49,6 @@ export const VideoBg = styled.div`
 
   @media screen and(max-width:760px) {
     width: 70%;
-
     -o-object-fit: scale-down;
     object-fit: scale-down;
   }
