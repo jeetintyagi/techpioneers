@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { HeroGlobeBackground, HeroHaloBackground } from './HeroBackgrounds';
-import { Button } from '../ButtonElement';
+import { ButtonX } from '../ButtonElement';
 import {
   HeroContainer,
   HeroBg,
@@ -40,17 +40,21 @@ const HeroSection = () => {
         </HeroP>
         <HeroP>Aryabhatta College</HeroP>
         <HeroBtnWrapper>
-          <Button
-            to='annualReport'
+          <ButtonX
+            to='events'
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             bigPad='true'
             fontBig='true'
             primary='true'
             dark='true'
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
           >
             Get started {hover ? <ArrowForward /> : <ArrowRight />}
-          </Button>
+          </ButtonX>
         </HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>

@@ -6,10 +6,10 @@ import {
   EventsP,
 } from './EventsElements';
 
-const EventCard = ({ to, imgsrc, caption, description }) => {
+const EventCard = ({ to, ImgSrc, caption, description }) => {
   return (
     <EventsCard to={to}>
-      <EventsIcon src={imgsrc} />
+      <EventsIcon src={ImgSrc} />
       <EventsCaption>{caption}</EventsCaption>
       <EventsP>{description}</EventsP>
     </EventsCard>

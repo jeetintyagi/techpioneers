@@ -5,6 +5,8 @@
 // for a section ,one for dark & another for light theme
 
 // For about section {dark theme}
+import ImgSrc from '../../images/svg-1.svg';
+
 export const AboutSectionData1 = {
   id: 'about',
   lightBg: false,
@@ -17,7 +19,7 @@ export const AboutSectionData1 = {
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ad aut alias eius commodi laudantium provident eligendi, aliquid quisquam earum autem unde excepturi saepe porro tenetur, architecto magnam deserunt. Placeat.',
   // Image
   imgStart: false,
-  src: require('../../images/svg-1.svg'),
+  ImgSrc,
   alt: 'Tech',
 
   // Button
@@ -45,7 +47,7 @@ export const AboutSectionData2 = {
 
   // Image
   imgStart: false,
-  src: require('../../images/svg-1.svg'),
+  ImgSrc,
   alt: 'Team',
 
   // Button
@@ -73,7 +75,7 @@ export const AnnualReportSectionData1 = {
 
   // Image
   imgStart: true,
-  src: require('../../images/svg-1.svg'),
+  ImgSrc,
   alt: 'Team',
 
   // Button
@@ -101,7 +103,7 @@ export const AnnualReportSectionData2 = {
 
   // Image
   imgStart: true,
-  src: require('../../images/svg-1.svg'),
+  ImgSrc,
   alt: 'Team',
 
   // Button

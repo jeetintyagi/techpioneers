@@ -6,7 +6,7 @@
 // and their possible values you can play with.
 
 import React from 'react';
-import { Button } from '../ButtonElement';
+import { ButtonX } from '../ButtonElement';
 import {
   BtnWrap,
   Column1,
@@ -37,7 +37,7 @@ const InfoSection = ({
   fontBig,
   pad,
   dark,
-  src,
+  ImgSrc,
   alt,
 }) => {
   return (
@@ -51,7 +51,7 @@ const InfoSection = ({
                 <Heading lightText={lightText}>{headLine}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
-                  <Button
+                  <ButtonX
                     to='annualReport'
                     smooth={true}
                     duration={500}
@@ -65,13 +65,13 @@ const InfoSection = ({
                     dark={dark}
                   >
                     {ButtonLabel}
-                  </Button>
+                  </ButtonX>
                 </BtnWrap>
               </TextWrapper>
             </Column1>
             <Column2>
               <ImgWrap>
-                <Img src={src} alt={alt} />
+                <Img src={ImgSrc} alt={alt} />
               </ImgWrap>
             </Column2>
           </InfoRow>
