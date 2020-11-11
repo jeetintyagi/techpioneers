@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { wrap } from 'popmotion';
 import { images } from './data';
@@ -43,6 +43,18 @@ const swipePower = (offset, velocity) => {
 
 const Slider = () => {
   const [[page, direction], setPage] = useState([0, 0]);
+  const [counter, setCounter] = useState(0);
+  const timeToChangeSliderImage = 5000;
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setCounter(counter + 1);
+      setPage([page + counter, counter]);
+    }, timeToChangeSliderImage);
+
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, [counter, page]);
 
   // We only have 3 images, but we paginate them absolutely (ie 1, 2, 3, 4, 5...) and
   // then wrap that within 0-2 to find our image ID in the array below. By passing an
