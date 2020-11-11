@@ -43,18 +43,19 @@ const swipePower = (offset, velocity) => {
 
 const Slider = () => {
   const [[page, direction], setPage] = useState([0, 0]);
-  const [counter, setCounter] = useState(0);
   const timeToChangeSliderImage = 5000;
   useEffect(() => {
     const timeout = setTimeout(() => {
-      setCounter(counter + 1);
-      setPage([page + counter, counter]);
+      if (page === 2) {
+        setPage([0, 0]);
+      }
+      setPage([page + 1, 1]);
     }, timeToChangeSliderImage);
 
     return () => {
       clearTimeout(timeout);
     };
-  }, [counter, page]);
+  }, [page]);
 
   // We only have 3 images, but we paginate them absolutely (ie 1, 2, 3, 4, 5...) and
   // then wrap that within 0-2 to find our image ID in the array below. By passing an
