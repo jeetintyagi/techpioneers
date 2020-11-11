@@ -44,7 +44,6 @@ export const VideoBg = styled.div`
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  object-fit: covered;
   background: #232a34;
 
   @media screen and(max-width:760px) {
