@@ -8,16 +8,23 @@ import {
   NavItem,
   NavMenu,
   NavLinks,
+  ImgWrap,
+  Img,
   // NavBtn,
   // NavBtnLink,
 } from './NavBarElements';
+import TechPioneers from '../../images/Techpioneers.png';
 
 const NavBar = ({ toggleSideBar }) => {
   return (
     <>
       <Nav>
         <NavBarContainer>
-          <NavLogo to='/'>TechPioneers</NavLogo>
+          <NavLogo to='/'>
+            <ImgWrap>
+              <Img src={TechPioneers} alt='TechPioneers' />
+            </ImgWrap>
+          </NavLogo>
           <MobileIcon onClick={toggleSideBar}>
             <FaBars />
           </MobileIcon>

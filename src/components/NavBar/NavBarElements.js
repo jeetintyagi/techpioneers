@@ -78,9 +78,10 @@ export const NavLinks = styled(LinkScroll)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
-  
+  font-weight: bold;
+
   &:active {
-    border-bottom: 3px solid #F86252;
+    border-bottom: 3px solid #f86252;
   }
 `;
 
@@ -95,7 +96,7 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkR)`
   border-radius: 50px;
-  background: #F86252;
+  background: #f86252;
   white-space: nowrap;
   padding: 10px 22px;
   color: #010606;
@@ -112,4 +113,19 @@ export const NavBtnLink = styled(LinkR)`
     background: #010606;
     color: #010606;
   }
+`;
+
+export const ImgWrap = styled.div`
+  max-width: 80px;
+  height: 100%;
+`;
+
+export const Img = styled.img`
+  width: 100%;
+  margin: 0 0 10px 0;
+  padding: 1px;
+  overflow: hidden;
+  -o-object-fit: scale-down;
+  object-fit: scale-down;
+  object-fit: cover;
 `;
