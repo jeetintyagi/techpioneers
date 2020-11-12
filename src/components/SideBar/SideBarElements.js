@@ -9,21 +9,21 @@ import { FaGlobeAmericas } from 'react-icons/fa';
 
 export const SideBarContainer = styled.aside`
   position: fixed;
-  width: 100%;
+  width: 70%;
   height: 100%;
-  background: #0d0d0d;
+  background: #f0f0f0;
   display: grid;
   align-items: center;
   transition: 0.3s ease-in-out;
   top: 0;
-  left: 0;
+  right: 0;
   opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
   top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
   z-index: 999;
 `;
 
 export const CloseIcon = styled(FaTimes)`
-  color: #fff;
+  color: #010606;
 `;
 
 export const Icon = styled.div`
@@ -37,7 +37,7 @@ export const Icon = styled.div`
 `;
 
 export const SideBarWrapper = styled.div`
-  color: #fff;
+  color: #010606;
 `;
 
 export const SideBarMenu = styled.ul`
@@ -52,12 +52,13 @@ export const SideBarMenu = styled.ul`
 `;
 
 export const SideBarLink = styled(LinkScroll)`
-  color: #fff;
+  color: #010606;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
+  font-weight: bold;
   text-decoration: none;
   list-style: none;
   transition: 0.2s ease-in-out;
@@ -65,9 +66,9 @@ export const SideBarLink = styled(LinkScroll)`
 
   &:hover,
   :active {
-    color: #01bf71;
-    font-size: 2rem; // #comment it if you don't like this kinda effect
-    ${'' /* border-bottom: 3px solid #01bf71; */}
+    color: #f86252;
+    font-size: 1.8rem; // #comment it if you don't like this kinda effect
+    ${'' /* border-bottom: 3px solid #F86252; */}
     transition: 0.2s ease-in-out;
   }
 `;
@@ -79,7 +80,7 @@ export const SideBtnWrap = styled.div`
 
 export const SideBarRoute = styled(LinkR)`
   border-radius: 50px;
-  background: #01bf71;
+  background: #f86252;
   white-space: nowrap;
   padding: 16px 64px;
   color: #010606;
@@ -92,7 +93,7 @@ export const SideBarRoute = styled(LinkR)`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: #fff;
+    background: #010606;
     color: #010606;
   }
 `;
@@ -101,7 +102,7 @@ export const AboutIcon = styled(MdInfo)`
   font-size: 20px;
   margin-right: 10px;
   &:hover {
-    color: #fff;
+    color: #010606;
   }
 `;
 
