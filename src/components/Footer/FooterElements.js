@@ -9,6 +9,6 @@ export const FooterContainer = styled.div`
   z-index: 1;
   justify-content: center;
   align-items: center;
-  position: sticky;
+  position: sticky; // !mportant
   position: -webkit-sticky; /* Safari */
 `;
