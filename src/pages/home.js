@@ -4,10 +4,10 @@ import NavBar from '../components/NavBar/index';
 import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
 import {
-  // AnnualReportSectionData1,
+  AnnualReportSectionData1,
   AnnualReportSectionData2,
   AboutSectionData1,
-  // AboutSectionData2,
+  AboutSectionData2,
 } from '../components/InfoSection/Data';
 import EventSection from '../components/Events';
 import Footer from '../components/Footer'
@@ -24,7 +24,7 @@ const Home = () => {
       <SideBar isOpen={isOpen} toggleSideBar={toggleSideBar} />
       <NavBar toggleSideBar={toggleSideBar} />
       <HeroSection />
-      <InfoSection {...AboutSectionData1} />
+      <InfoSection {...AboutSectionData2} />
       <EventSection />
       <InfoSection {...AnnualReportSectionData2} />
       <Footer/>

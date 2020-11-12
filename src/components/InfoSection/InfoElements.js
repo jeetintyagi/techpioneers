@@ -54,7 +54,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-  color: ${({ primary }) => (primary ? '#01BF71' : '#09f')};
+  color: ${({ primary }) => (primary ? '#01BF71' : '#F86252')};
   font-size: 16px;
   line-height: 16px;
   font-weight: 800;

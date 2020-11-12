@@ -7,7 +7,7 @@ export const EventsContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #010606;
+  background: #fff;
 
   @media screen and (max-width: 768px) {
     height: 1100px;
@@ -19,7 +19,7 @@ export const EventsContainer = styled.div`
 
 export const EventsHeading = styled.h1`
   font-size: 2.5rem;
-  color: #01bf71;
+  color: #F86252;
   margin-bottom: 64px;
 
   @media screen and (max-width: 480px) {
@@ -47,7 +47,7 @@ export const EventsWrapper = styled.div`
 `;
 
 export const EventsCard = styled(Link)`
-  background: #fff;
+  background: #fbfbfb;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -56,12 +56,12 @@ export const EventsCard = styled(Link)`
   max-height: 340px;
   padding: 30px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-  transition: all 0.2 ease-in-out;
   text-decoration: none;
 
   &:hover {
     transform: scale(1.02);
     transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 20px #515151;
     cursor: pointer;
   }
 `;

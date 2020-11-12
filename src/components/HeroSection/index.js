@@ -47,7 +47,6 @@ const HeroSection = () => {
               onMouseLeave={onHover}
               bigPad='true'
               fontBig='true'
-              primary='true'
               dark='true'
               spy={true}
               smooth={true}

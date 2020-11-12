@@ -3,7 +3,7 @@ import { Link as LinkScroll } from 'react-scroll';
 
 export const ButtonX = styled(LinkScroll)`
   border-radius: 50px;
-  background: ${({ primary }) => (primary ? '#01BF71' : '#09f')};
+  background: ${({ primary }) => (primary ? '#01BF71' : '#F86252')};
   white-space: nowrap;
   padding: ${({ bigPad }) => (bigPad ? '14px 48px' : '12px 30px')};
   font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
@@ -20,7 +20,7 @@ export const ButtonX = styled(LinkScroll)`
 
   &:hover {
     background: ${({ dark, primary }) =>
-      primary ? '#fff' : dark ? '#09f' : '#fff'};
+      primary ? '#fff' : dark ? '#F86252' : '#fff'};
     color: ${({ dark, primary }) =>
       primary ? '#010606' : dark ? '#fff' : '#010606'};
   }
