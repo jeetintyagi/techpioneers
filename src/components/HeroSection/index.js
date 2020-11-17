@@ -8,6 +8,7 @@ import {
   HeroContent,
   HeroP,
   HeroH1,
+  Mark,
   HeroBtnWrapper,
   ArrowForward,
   ArrowRight,
@@ -31,7 +32,10 @@ const HeroSection = () => {
         </HeroBg>
 
         <HeroContent>
-          <HeroH1>TechPioneers</HeroH1>
+          <HeroH1>
+            We are Tech
+            <Mark className='red'>Pioneers</Mark>
+          </HeroH1>
           <HeroP>Department of computer science</HeroP>
           {/* <HeroP>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. In eius

@@ -7,7 +7,7 @@ export const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 150px 100px;
-  height: 800px;
+  height: 900px;
   position: relative;
   z-index: 1;
 
@@ -44,7 +44,7 @@ export const VideoBg = styled.div`
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  background: #232a34;
+  background: #0c0c0c;
 
   @media screen and(max-width:760px) {
     width: 70%;
@@ -75,6 +75,11 @@ export const HeroH1 = styled.h1`
   @media screen and(max-width:480px) {
     font-size: 32px;
   }
+`;
+
+export const Mark = styled.mark`
+  color: #f86252;
+  background: none;
 `;
 
 export const HeroP = styled.p`

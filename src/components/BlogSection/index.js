@@ -9,7 +9,7 @@ import {
 
 const BlogSection = () => {
   return (
-    <BlogContainer>
+    <BlogContainer id="blogs">
       <BlogWrapper>
         <BlogRow>
           <Column1></Column1>

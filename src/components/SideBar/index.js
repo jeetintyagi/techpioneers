@@ -24,27 +24,69 @@ const SideBar = ({ isOpen, toggleSideBar }) => {
         </Icon>
         <SideBarWrapper>
           <SideBarMenu>
-            <SideBarLink to='about' onClick={toggleSideBar}>
+            <SideBarLink
+              to='about'
+              onClick={toggleSideBar}
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
               <AboutIcon />
               About
             </SideBarLink>
-            <SideBarLink to='events' onClick={toggleSideBar}>
+            <SideBarLink
+              to='events'
+              onClick={toggleSideBar}
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
               <EventsIcon />
               Events
             </SideBarLink>
-            <SideBarLink to='annualReport' onClick={toggleSideBar}>
+            <SideBarLink
+              to='annualReport'
+              onClick={toggleSideBar}
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
               <ReportIcon />
               Annual Report
             </SideBarLink>
-            <SideBarLink to='team' onClick={toggleSideBar}>
+            <SideBarLink
+              to='team'
+              onClick={toggleSideBar}
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
               <TeamIcon />
               Team
             </SideBarLink>
-            <SideBarLink to='blogs' onClick={toggleSideBar}>
+            <SideBarLink
+              to='blogs'
+              onClick={toggleSideBar}
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
               <BlogsIcon />
               Blogs
             </SideBarLink>
-            <SideBarLink to='celestech' onClick={toggleSideBar}>
+            <SideBarLink
+              to='celestech'
+              onClick={toggleSideBar}
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
               <CelestechIcon />
               Celestech
             </SideBarLink>

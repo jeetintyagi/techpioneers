@@ -10,7 +10,8 @@ import {
   AboutSectionData2,
 } from '../components/InfoSection/Data';
 import EventSection from '../components/Events';
-import Footer from '../components/Footer'
+import BlogSection from '../components/BlogSection';
+import Footer from '../components/Footer';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +28,8 @@ const Home = () => {
       <InfoSection {...AboutSectionData2} />
       <EventSection />
       <InfoSection {...AnnualReportSectionData2} />
-      <Footer/>
+      <BlogSection />
+      <Footer />
     </>
   );
 };
