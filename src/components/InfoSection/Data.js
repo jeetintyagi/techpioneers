@@ -24,6 +24,7 @@ export const AboutSectionData1 = {
 
   // Button
   ButtonLabel: 'More Details',
+  to: '/teams',
   primary: true,
   bigPad: true,
   fontBig: true,
@@ -52,6 +53,7 @@ export const AboutSectionData2 = {
 
   // Button
   ButtonLabel: 'More Details',
+  to: '/teams',
   primary: false,
   bigPad: true,
   fontBig: true,
@@ -80,6 +82,7 @@ export const AnnualReportSectionData1 = {
 
   // Button
   ButtonLabel: 'More Details',
+  to: '/annualreport',
   primary: true,
   bigPad: true,
   fontBig: true,
@@ -108,6 +111,7 @@ export const AnnualReportSectionData2 = {
 
   // Button
   ButtonLabel: 'More Details',
+  to: '/annualreport',
   primary: false,
   bigPad: true,
   fontBig: true,

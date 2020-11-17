@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Slider from '../Slider/Slider';
-import { ButtonX } from '../ButtonElement';
+import { ScrollButton } from '../ScrollButton';
 import {
   HeroContainer,
   HeroBg,
@@ -36,16 +36,12 @@ const HeroSection = () => {
             We are Tech
             <Mark className='red'>Pioneers</Mark>
           </HeroH1>
-          <HeroP>Department of computer science</HeroP>
+          <HeroP>Computer Science society | Aryabhatta College</HeroP>
           {/* <HeroP>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. In eius
-            culpa, officiis, fugiat necessitatibus aliquam eveniet tempore
-            labore tenetur veniam, natus ex eaque rem hic veritatis. Esse
-            reprehenderit id numquam.
+
           </HeroP> */}
-          <HeroP>Aryabhatta College</HeroP>
           <HeroBtnWrapper>
-            <ButtonX
+            <ScrollButton
               to='events'
               onMouseEnter={onHover}
               onMouseLeave={onHover}
@@ -58,7 +54,7 @@ const HeroSection = () => {
               duration={500}
             >
               Get started {hover ? <ArrowForward /> : <ArrowRight />}
-            </ButtonX>
+            </ScrollButton>
           </HeroBtnWrapper>
         </HeroContent>
       </HeroContainer>
