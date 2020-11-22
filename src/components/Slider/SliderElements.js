@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export const SliderWrapper = styled.div`
   margin: 0;
-  background: #0c0c0c;
+  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,6 +11,7 @@ export const SliderWrapper = styled.div`
   height: 1000px;
   position: relative;
   overflow: hidden;
+  opacity: 0.8;
 `;
 
 export const SliderImages = styled(motion.img)`
@@ -22,6 +23,7 @@ export const SliderNextButton = styled.div`
   top: calc(50% - 20px);
   position: absolute;
   background: white;
+  opacity: 0.5;
   border-radius: 30px;
   width: 40px;
   height: 40px;
@@ -34,12 +36,17 @@ export const SliderNextButton = styled.div`
   font-size: 18px;
   z-index: 2;
   right: 10px;
+
+  &:hover {
+    opacity: 1;
+  }
 `;
 
 export const SliderPrevButton = styled.div`
   top: calc(50% - 20px);
   position: absolute;
   background: white;
+  opacity: 0.5;
   border-radius: 30px;
   width: 40px;
   height: 40px;
@@ -53,6 +60,10 @@ export const SliderPrevButton = styled.div`
   z-index: 2;
   left: 10px;
   transform: scale(-1);
+
+  &:hover {
+    opacity: 1;
+  }
 `;
 
 // To add text on the slider images
