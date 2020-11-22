@@ -7,7 +7,7 @@ export const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 150px 100px;
-  height: 900px;
+  height: 1000px;
   position: relative;
   z-index: 1;
 
@@ -44,7 +44,7 @@ export const VideoBg = styled.div`
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  background: #0c0c0c;
+  background: #fff;
 
   @media screen and(max-width:760px) {
     width: 70%;
@@ -57,7 +57,7 @@ export const HeroContent = styled.div`
   z-index: 3;
   max-width: 1200px;
   position: absolute;
-  padding-right: ;
+  padding-right:0 ;
   padding-left: 10px;
   display: flex;
   flex-direction: column;

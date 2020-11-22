@@ -44,6 +44,7 @@ const swipePower = (offset, velocity) => {
 const Slider = () => {
   const [[page, direction], setPage] = useState([0, 0]);
   const timeToChangeSliderImage = 5000;
+
   useEffect(() => {
     const timeout = setTimeout(() => {
       if (page === 2) {

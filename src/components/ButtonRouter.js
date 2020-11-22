@@ -1,3 +1,8 @@
+// Button that routes to another page
+// made using styled - components
+// has all the attributes of Link
+// from react - router - dom;
+
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 

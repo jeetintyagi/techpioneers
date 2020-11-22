@@ -8,7 +8,7 @@ export const SliderWrapper = styled.div`
   justify-content: center;
   align-items: center;
   padding: 150px 100px;
-  height: 800px;
+  height: 1000px;
   position: relative;
   overflow: hidden;
 `;

@@ -34,12 +34,10 @@ const HeroSection = () => {
         <HeroContent>
           <HeroH1>
             We are Tech
-            <Mark className='red'>Pioneers</Mark>
+            <Mark >Pioneers</Mark>
           </HeroH1>
           <HeroP>Computer Science society | Aryabhatta College</HeroP>
-          {/* <HeroP>
 
-          </HeroP> */}
           <HeroBtnWrapper>
             <ScrollButton
               to='events'
