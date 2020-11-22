@@ -46,7 +46,7 @@ const BlogSection = ({ lightBg, ImgSrc, alt }) => {
               offset={-70}
               duration={500}
             >
-              Get started {hover ? <ArrowForward /> : <ArrowRight />}
+              Get started {hover ? <ArrowRight /> : <ArrowForward />}
             </ButtonRouter>
           </BlogBtnWrapper>
           <ImgWrap>
