@@ -24,13 +24,12 @@ export const BlogContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 50px;
+  padding: 20px;
 `;
 
 export const BlogH1 = styled.h1`
   color: #010606;
   font-size: 60px;
-  ${'' /* justify-content: center; */}
   text-align: center;
 
   @media screen and(max-width:760px) {

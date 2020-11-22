@@ -67,7 +67,6 @@ export const HeroContent = styled.div`
   z-index: 3;
   max-width: 1200px;
   position: relative;
-  ${'' /* padding-top: 150px; */}
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,18 +74,21 @@ export const HeroContent = styled.div`
   @media (max-width: 768px) {
     padding-top: 150px;
   }
+  @media (max-width: 480px) {
+    padding-top: 200px;
+  }
 `;
 
 export const HeroH1 = styled.h1`
   color: #fff;
   font-size: 90px;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 80px;
 
   @media (max-width: 768px) {
     font-size: 50px;
   }
-  @media screen and(max-width: 480px) {
+  @media (max-width: 480px) {
     font-size: 28px;
   }
 `;

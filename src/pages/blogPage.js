@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
 import SideBar from '../components/SideBar';
 import NavBar from '../components/NavBar';
-import InfoSection from '../components/InfoSection';
+import BlogSection from '../components/BlogSection';
 import Footer from '../components/Footer';
 
-import {
-
-  AboutSectionData2,
-} from '../components/InfoSection/Data';
+import { BlogSectionData } from '../components/BlogSection/data';
 
 const BlogPage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +18,7 @@ const BlogPage = () => {
       {' '}
       <SideBar isOpen={isOpen} toggleSideBar={toggleSideBar} />
       <NavBar toggleSideBar={toggleSideBar} />
-      <InfoSection {...AboutSectionData2}/>
+      <BlogSection {...BlogSectionData} />
       <Footer />
     </>
   );
