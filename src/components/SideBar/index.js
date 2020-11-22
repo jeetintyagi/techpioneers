@@ -25,7 +25,7 @@ const SideBar = ({ isOpen, toggleSideBar }) => {
         <SideBarWrapper>
           <SideBarMenu>
             <SideBarLink
-              to='about'
+              to='/about'
               onClick={toggleSideBar}
               spy={true}
               smooth={true}
@@ -36,7 +36,7 @@ const SideBar = ({ isOpen, toggleSideBar }) => {
               About
             </SideBarLink>
             <SideBarLink
-              to='events'
+              to='/events'
               onClick={toggleSideBar}
               spy={true}
               smooth={true}
@@ -47,7 +47,7 @@ const SideBar = ({ isOpen, toggleSideBar }) => {
               Events
             </SideBarLink>
             <SideBarLink
-              to='annualReport'
+              to='/annualReport'
               onClick={toggleSideBar}
               spy={true}
               smooth={true}
@@ -58,7 +58,7 @@ const SideBar = ({ isOpen, toggleSideBar }) => {
               Annual Report
             </SideBarLink>
             <SideBarLink
-              to='team'
+              to='/team'
               onClick={toggleSideBar}
               spy={true}
               smooth={true}
@@ -69,7 +69,7 @@ const SideBar = ({ isOpen, toggleSideBar }) => {
               Team
             </SideBarLink>
             <SideBarLink
-              to='blogs'
+              to='/blogs'
               onClick={toggleSideBar}
               spy={true}
               smooth={true}
@@ -80,7 +80,7 @@ const SideBar = ({ isOpen, toggleSideBar }) => {
               Blogs
             </SideBarLink>
             <SideBarLink
-              to='celestech'
+              to='/celestech'
               onClick={toggleSideBar}
               spy={true}
               smooth={true}
@@ -92,7 +92,7 @@ const SideBar = ({ isOpen, toggleSideBar }) => {
             </SideBarLink>
           </SideBarMenu>
           {/* <SideBtnWrap>
-            <SideBarRoute to=''></SideBarRoute>
+            <SideBarRoute to='/'></SideBarRoute>
           </SideBtnWrap> */}
         </SideBarWrapper>
       </SideBarContainer>

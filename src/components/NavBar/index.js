@@ -35,7 +35,7 @@ const NavBar = ({ toggleSideBar }) => {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                to='about'
+                to='/about'
               >
                 About
               </NavLinks>
@@ -46,7 +46,7 @@ const NavBar = ({ toggleSideBar }) => {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                to='events'
+                to='/events'
               >
                 Events
               </NavLinks>
@@ -57,7 +57,7 @@ const NavBar = ({ toggleSideBar }) => {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                to='annualReport'
+                to='/annualReport'
               >
                 Annual Report
               </NavLinks>
@@ -68,7 +68,7 @@ const NavBar = ({ toggleSideBar }) => {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                to='team'
+                to='/team'
               >
                 Team
               </NavLinks>
@@ -79,7 +79,7 @@ const NavBar = ({ toggleSideBar }) => {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                to='blogs'
+                to='/blogs'
               >
                 Blogs
               </NavLinks>
@@ -90,7 +90,7 @@ const NavBar = ({ toggleSideBar }) => {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                to='celestech'
+                to='/celestech'
               >
                 Celestech
               </NavLinks>

@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { FaTimes } from 'react-icons/fa';
 import { Link as LinkR } from 'react-router-dom';
-import { Link as LinkScroll } from 'react-scroll';
 import { MdInfo, MdEvent } from 'react-icons/md';
 import { HiDocumentReport } from 'react-icons/hi';
 import { RiArticleFill, RiTeamFill } from 'react-icons/ri';
@@ -51,7 +50,7 @@ export const SideBarMenu = styled.ul`
   }
 `;
 
-export const SideBarLink = styled(LinkScroll)`
+export const SideBarLink = styled(LinkR)`
   color: #010606;
   cursor: pointer;
   display: flex;
