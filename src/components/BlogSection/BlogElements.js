@@ -76,3 +76,19 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
   margin-left: 8px;
   font-size: 20px;
 `;
+
+export const ImgWrap = styled.div`
+  max-width: 555px;
+  height: 100%;
+  padding: 50px 0;
+`;
+
+export const Img = styled.img`
+  width: 100%;
+  margin: 0 0 10px 0;
+  padding-right: 0;
+  overflow: hidden;
+  -o-object-fit: scale-down;
+  object-fit: scale-down;
+  object-fit: covered;
+`;

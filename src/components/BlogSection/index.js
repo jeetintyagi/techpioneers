@@ -9,10 +9,12 @@ import {
   Mark,
   ArrowForward,
   ArrowRight,
+  ImgWrap,
+  Img,
 } from './BlogElements';
 import { ButtonRouter } from '../ButtonRouter';
 
-const BlogSection = ({ lightBg }) => {
+const BlogSection = ({ lightBg, ImgSrc, alt }) => {
   const [hover, setHover] = useState(false);
 
   const onHover = () => {
@@ -20,7 +22,7 @@ const BlogSection = ({ lightBg }) => {
   };
 
   return (
-    <BlogContainer id='blogs' lightBg>
+    <BlogContainer id='blogs' lightBg={lightBg}>
       <BlogWrapper>
         <BlogContent>
           <BlogH1>
@@ -29,8 +31,7 @@ const BlogSection = ({ lightBg }) => {
           <BlogP>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id quod
             dolores hic voluptatem, neque molestias ullam, similique quidem
-            suscipit adipisci quibusdam earum beatae aperiam aliquam aut
-            dignissimos animi totam nobis.
+            suscipit adipisci.
           </BlogP>
           <BlogBtnWrapper>
             <ButtonRouter
@@ -48,6 +49,9 @@ const BlogSection = ({ lightBg }) => {
               Get started {hover ? <ArrowForward /> : <ArrowRight />}
             </ButtonRouter>
           </BlogBtnWrapper>
+          <ImgWrap>
+            <Img src={ImgSrc} alt={alt} />
+          </ImgWrap>
         </BlogContent>
       </BlogWrapper>
     </BlogContainer>
