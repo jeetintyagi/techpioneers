@@ -34,9 +34,11 @@ const HeroSection = () => {
         <HeroContent>
           <HeroH1>
             We are Tech
-            <Mark >Pioneers</Mark>
+            <Mark>Pioneers</Mark>
           </HeroH1>
-          <HeroP>Computer Science society | Aryabhatta College</HeroP>
+          <HeroP>
+            Computer Science Society Aryabhatta College | University of Delhi{' '}
+          </HeroP>
 
           <HeroBtnWrapper>
             <ScrollButton

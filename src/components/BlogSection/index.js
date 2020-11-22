@@ -29,9 +29,8 @@ const BlogSection = ({ lightBg, ImgSrc, alt }) => {
             Check out our <Mark>blogs</Mark>
           </BlogH1>
           <BlogP>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id quod
-            dolores hic voluptatem, neque molestias ullam, similique quidem
-            suscipit adipisci.
+            Lorem ipsum dolor sit, amet consectetur adipisicing.Neque molestias
+            ullam, similique quidem suscipit.
           </BlogP>
           <BlogBtnWrapper>
             <ButtonRouter
