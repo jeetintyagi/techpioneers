@@ -67,22 +67,27 @@ export const HeroContent = styled.div`
   z-index: 3;
   max-width: 1200px;
   position: relative;
-  padding-top: 150px;
+  ${'' /* padding-top: 150px; */}
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 768px) {
+    padding-top: 150px;
+  }
 `;
 
 export const HeroH1 = styled.h1`
   color: #fff;
-  font-size: 100px;
+  font-size: 90px;
   text-align: center;
+  padding-top: 50px;
 
-  @media (max-width: 760px) {
-    font-size: 48px;
+  @media (max-width: 768px) {
+    font-size: 50px;
   }
-  @media (max-width: 480px) {
-    font-size: 32px;
+  @media screen and(max-width: 480px) {
+    font-size: 28px;
   }
 `;
 
