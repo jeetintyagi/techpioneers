@@ -50,7 +50,7 @@ const HeroSection = () => {
               dark='true'
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-80}
               duration={500}
             >
               Get started {hover ? <ArrowForward /> : <ArrowRight />}

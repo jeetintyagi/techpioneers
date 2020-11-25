@@ -3,6 +3,7 @@ import { Link as LinkR } from 'react-router-dom';
 
 export const Nav = styled.nav`
   background: ${({ scrollNav }) => (scrollNav ? '#fbfbfb' : 'transparent')};
+  //rgb(248,98,82)
   height: 80px;
   margin-top: -80px; // comment it if you ain't using react-scroll or landing page is of 1 window size vertically
   display: flex;
@@ -79,7 +80,11 @@ export const NavLinks = styled(LinkR)`
   cursor: pointer;
   font-weight: bold;
 
-  &:active {
+  &:hover {
+    border-bottom: 3px solid #f86252;
+  }
+
+  &.active {
     border-bottom: 3px solid #f86252;
   }
 
