@@ -2,7 +2,8 @@ import styled from 'styled-components';
 import { Link as LinkR } from 'react-router-dom';
 
 export const Nav = styled.nav`
-  background: #fbfbfb;
+  background: ${({ scrollNav }) =>
+    scrollNav ? '#fbfbfb' : 'transparent'};
   height: 80px;
   margin-top: -80px; // comment it if you ain't using react-scroll or landing page is of 1 window size vertically
   display: flex;

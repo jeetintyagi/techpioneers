@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { wrap } from 'popmotion';
 import { images } from './data';
+
 import {
   SliderWrapper,
   SliderNextButton,
