@@ -2,8 +2,7 @@ import styled from 'styled-components';
 import { Link as LinkR } from 'react-router-dom';
 
 export const Nav = styled.nav`
-  background: ${({ scrollNav }) =>
-    scrollNav ? '#fbfbfb' : 'transparent'};
+  background: ${({ scrollNav }) => (scrollNav ? '#fbfbfb' : 'transparent')};
   height: 80px;
   margin-top: -80px; // comment it if you ain't using react-scroll or landing page is of 1 window size vertically
   display: flex;
@@ -71,7 +70,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkR)`
-  color: #010606;
+  color: #fbfbfb;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -82,6 +81,10 @@ export const NavLinks = styled(LinkR)`
 
   &:active {
     border-bottom: 3px solid #f86252;
+  }
+
+  @media (max-width: 1425px) {
+    color: #010606;
   }
 `;
 
