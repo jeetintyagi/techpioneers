@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
 import {
   Nav,
@@ -44,6 +44,7 @@ const NavBar = ({ toggleSideBar }) => {
           <NavMenu>
             <NavItem>
               <NavLinks
+                scrollNav={scrollNav}
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -55,6 +56,7 @@ const NavBar = ({ toggleSideBar }) => {
             </NavItem>
             <NavItem>
               <NavLinks
+                scrollNav={scrollNav}
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -66,6 +68,7 @@ const NavBar = ({ toggleSideBar }) => {
             </NavItem>
             <NavItem>
               <NavLinks
+                scrollNav={scrollNav}
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -77,6 +80,7 @@ const NavBar = ({ toggleSideBar }) => {
             </NavItem>
             <NavItem>
               <NavLinks
+                scrollNav={scrollNav}
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -88,6 +92,7 @@ const NavBar = ({ toggleSideBar }) => {
             </NavItem>
             <NavItem>
               <NavLinks
+                scrollNav={scrollNav}
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -99,6 +104,7 @@ const NavBar = ({ toggleSideBar }) => {
             </NavItem>
             <NavItem>
               <NavLinks
+                scrollNav={scrollNav}
                 spy={true}
                 smooth={true}
                 offset={-70}
