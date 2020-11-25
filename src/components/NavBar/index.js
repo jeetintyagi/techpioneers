@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
+import { animateScroll as scroll } from 'react-scroll';
 import {
   Nav,
   NavBarContainer,
@@ -29,11 +30,15 @@ const NavBar = ({ toggleSideBar }) => {
   useEffect(() => {
     window.addEventListener('scroll', changeNav);
   }, [scrollNav]);
+
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
   return (
     <>
       <Nav scrollNav={scrollNav}>
         <NavBarContainer>
-          <NavLogo to='/'>
+          <NavLogo to='/' onClick={toggleHome}>
             <ImgWrap>
               <Img src={TechPioneers} alt='TechPioneers' />
             </ImgWrap>
@@ -45,10 +50,8 @@ const NavBar = ({ toggleSideBar }) => {
             <NavItem>
               <NavLinks
                 scrollNav={scrollNav}
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
+                exact={true}
+                activeClassName='active'
                 to='/about'
               >
                 About
@@ -57,10 +60,8 @@ const NavBar = ({ toggleSideBar }) => {
             <NavItem>
               <NavLinks
                 scrollNav={scrollNav}
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
+                exact={true}
+                activeClassName='active'
                 to='/events'
               >
                 Events
@@ -69,10 +70,8 @@ const NavBar = ({ toggleSideBar }) => {
             <NavItem>
               <NavLinks
                 scrollNav={scrollNav}
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
+                exact={true}
+                activeClassName='active'
                 to='/annualReport'
               >
                 Annual Report
@@ -81,10 +80,8 @@ const NavBar = ({ toggleSideBar }) => {
             <NavItem>
               <NavLinks
                 scrollNav={scrollNav}
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
+                exact={true}
+                activeClassName='active'
                 to='/team'
               >
                 Team
@@ -93,10 +90,8 @@ const NavBar = ({ toggleSideBar }) => {
             <NavItem>
               <NavLinks
                 scrollNav={scrollNav}
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
+                exact={true}
+                activeClassName='active'
                 to='/blogs'
               >
                 Blogs
@@ -105,10 +100,8 @@ const NavBar = ({ toggleSideBar }) => {
             <NavItem>
               <NavLinks
                 scrollNav={scrollNav}
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
+                exact={true}
+                activeClassName='active'
                 to='/celestech'
               >
                 Celestech
