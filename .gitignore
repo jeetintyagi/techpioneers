@@ -27,3 +27,6 @@ yarn-error.log*
 
 **/videos
 **/images
+
+# Custom Snippets
+**/Snippets
