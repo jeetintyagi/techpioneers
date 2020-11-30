@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { MdKeyboardArrowRight, MdArrowForward } from 'react-icons/md';
+import { motion } from 'framer-motion';
 
 export const HeroContainer = styled.div`
   background: #0c0c0c;
@@ -28,12 +29,12 @@ export const HeroContainer = styled.div`
   }
   @media screen and (max-width: 768px) {
     height: 900px;
-    top: -100px;
+    top: -120px;
     padding: 0px 100px;
   }
   @media screen and (max-width: 768px) {
     height: 800px;
-    top: -110px;
+    top: -180px;
     padding: 0px 100px;
   }
 `;
@@ -105,18 +106,30 @@ export const HeroP = styled.p`
   text-align: center;
   max-width: 800px;
 
-  @media screen and(max-width:760px) {
-    font-size: 22px;
+  @media (max-width: 760px) {
+    font-size: 20px;
   }
-  @media screen and(max-width:480px) {
-    font-size: 18px;
+  @media (max-width: 480px) {
+    font-size: 12px;
   }
 `;
 
 export const HeroBtnWrapper = styled.div`
   margin-top: 32px;
   display: flex;
-  align-items: left;
+`;
+
+export const ChevronButtonAnime = styled(motion.i)`
+  font-size: 48px;
+  color: rgb(248, 98, 82);
+
+  @media (max-width: 768px) {
+    font-size: 32px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 24px;
+  }
 `;
 
 export const ArrowForward = styled(MdArrowForward)`
