@@ -1,3 +1,11 @@
+/*
+BlogSection component is a reusable component 
+used for blog as well as team section on home page 
+*data.js holds the appropriate content and svg images 
+to give different look to each component 
+but with a same UI layout 
+*/
+
 import React, { useState } from 'react';
 import {
   BlogContainer,

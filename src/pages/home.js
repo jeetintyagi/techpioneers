@@ -4,15 +4,18 @@ import NavBar from '../components/NavBar/index';
 import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
 import {
-  AnnualReportSectionData1,
+  // AnnualReportSectionData1,
   AnnualReportSectionData2,
-  AboutSectionData1,
+  // AboutSectionData1,
   AboutSectionData2,
 } from '../components/InfoSection/Data';
 import EventSection from '../components/Events';
 import BlogSection from '../components/BlogSection';
 import Footer from '../components/Footer';
-import { BlogSectionData, TeamSectionData } from '../components/BlogSection/data';
+import {
+  BlogSectionData,
+  TeamSectionData,
+} from '../components/BlogSection/data';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,8 +32,8 @@ const Home = () => {
       <InfoSection {...AboutSectionData2} />
       <EventSection />
       <InfoSection {...AnnualReportSectionData2} />
-      <BlogSection {...BlogSectionData}/>
-      <BlogSection {...TeamSectionData}/>
+      <BlogSection {...BlogSectionData} />
+      <BlogSection {...TeamSectionData} />
       <Footer />
     </>
   );
