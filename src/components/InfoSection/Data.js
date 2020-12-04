@@ -24,7 +24,7 @@ export const AboutSectionData1 = {
 
   // Button
   ButtonLabel: 'More Details',
-  to: '/teams',
+  to: '/team',
   primary: false,
   bigPad: true,
   fontBig: true,
@@ -53,7 +53,7 @@ export const AboutSectionData2 = {
 
   // Button
   ButtonLabel: 'More Details',
-  to: '/teams',
+  to: '/team',
   primary: false,
   bigPad: true,
   fontBig: true,

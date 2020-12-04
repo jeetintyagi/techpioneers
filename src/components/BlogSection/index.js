@@ -22,7 +22,7 @@ import {
 } from './BlogElements';
 import { ButtonRouter } from '../ButtonRouter';
 
-const BlogSection = ({ lightBg, h1, h1Mark, description, ImgSrc, alt }) => {
+const BlogSection = ({ lightBg, h1, h1Mark, description, to, ImgSrc, alt }) => {
   const [hover, setHover] = useState(false);
 
   const onHover = () => {
@@ -39,7 +39,7 @@ const BlogSection = ({ lightBg, h1, h1Mark, description, ImgSrc, alt }) => {
           <BlogP>{description}</BlogP>
           <BlogBtnWrapper>
             <ButtonRouter
-              to='/blogs'
+              to={to}
               onMouseEnter={onHover}
               onMouseLeave={onHover}
               bigPad='true'

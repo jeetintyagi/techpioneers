@@ -7,6 +7,8 @@ export const BlogSectionData = {
   h1Mark: 'blogs',
   description: `Lorem ipsum dolor sit, amet consectetur adipisicing.Neque molestias
                 ullam, similique quidem suscipit.`,
+  to:'/teams',
+  
   // svg image
   ImgSrc: BlogImgSrc,
   alt: 'Blogging',
@@ -19,6 +21,8 @@ export const TeamSectionData = {
   h1Mark: 'Team',
   description: `Lorem ipsum dolor sit, amet consectetur adipisicing.Neque molestias
                 ullam.`,
+  to: '/team',
+  
   // svg image
   ImgSrc: TeamImgSrc,
   alt: 'Blogging',
