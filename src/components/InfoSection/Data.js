@@ -5,7 +5,7 @@
 // for a section ,one for dark & another for light theme
 
 // For about section {dark theme}
-import ImgSrc from '../../images/svg-1.svg';
+import WhoAreWe from '../../images/infoSection1.svg';
 
 export const AboutSectionData1 = {
   id: 'about',
@@ -19,17 +19,17 @@ export const AboutSectionData1 = {
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ad aut alias eius commodi laudantium provident eligendi, aliquid quisquam earum autem unde excepturi saepe porro tenetur, architecto magnam deserunt. Placeat.',
   // Image
   imgStart: false,
-  ImgSrc,
+  ImgSrc: WhoAreWe,
   alt: 'Tech',
 
   // Button
   ButtonLabel: 'More Details',
   to: '/teams',
-  primary: true,
+  primary: false,
   bigPad: true,
   fontBig: true,
   pad: true,
-  dark: false,
+  dark: true,
 };
 
 // For about section {light theme}
@@ -48,7 +48,7 @@ export const AboutSectionData2 = {
 
   // Image
   imgStart: false,
-  ImgSrc,
+  ImgSrc: WhoAreWe,
   alt: 'Team',
 
   // Button
@@ -70,24 +70,24 @@ export const AnnualReportSectionData1 = {
   darkText: false,
 
   // content
-  topLine: 'Know more about us',
-  headLine: 'Department of Computer Science',
+  topLine: 'Our annual report',
+  headLine: 'Things we Accomplished',
   description:
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ad aut alias eius commodi laudantium provident eligendi, aliquid quisquam earum autem unde excepturi saepe porro tenetur, architecto magnam deserunt. Placeat.',
 
   // Image
   imgStart: true,
-  ImgSrc,
+  ImgSrc: WhoAreWe,
   alt: 'Team',
 
   // Button
   ButtonLabel: 'More Details',
   to: '/annualreport',
-  primary: true,
+  primary: false,
   bigPad: true,
   fontBig: true,
   pad: true,
-  dark: false,
+  dark: true,
 };
 
 // For AnnualReport section {light theme}
@@ -99,14 +99,14 @@ export const AnnualReportSectionData2 = {
   darkText: true,
 
   // content
-  topLine: 'Know more about us',
-  headLine: 'Department of Computer Science',
+  topLine: 'Our annual report',
+  headLine: 'Things we Accomplished',
   description:
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ad aut alias eius commodi laudantium provident eligendi, aliquid quisquam earum autem unde excepturi saepe porro tenetur, architecto magnam deserunt. Placeat.',
 
   // Image
   imgStart: true,
-  ImgSrc,
+  ImgSrc: WhoAreWe,
   alt: 'Team',
 
   // Button
