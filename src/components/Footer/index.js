@@ -26,6 +26,7 @@ import {
   WebsiteRights,
   ImgWrap,
   Img,
+  SocialIconLinkWithText,
 } from './FooterElements';
 
 const Footer = () => {
@@ -52,22 +53,25 @@ const Footer = () => {
           </FooterLinksWrapper>
           <FooterLinksWrapper>
             <FooterLinkItems>
-              <FooterLinkTitle>University </FooterLinkTitle>
-              <SocialIconLink href='http://www.du.ac.in/du/' target='_blank'>
-                {' '}
-                <FaUniversity />
-              </SocialIconLink>
-              <SocialIconLink
+              <FooterLinkTitle>External</FooterLinkTitle>
+              <SocialIconLinkWithText
+                href='http://www.du.ac.in/du/'
+                target='_blank'
+              >
+                <FaUniversity /> DU
+              </SocialIconLinkWithText>
+              <SocialIconLinkWithText
                 href='https://aryabhattacollege.ac.in/'
                 target='_blank'
               >
-                {' '}
-                <FaBuilding />
-              </SocialIconLink>
-              <SocialIconLink href='https://celestech.live/' target='_blank'>
-                {' '}
-                <FaGlobe />
-              </SocialIconLink>
+                <FaBuilding /> Aryabhatta College
+              </SocialIconLinkWithText>
+              <SocialIconLinkWithText
+                href='https://celestech.live/'
+                target='_blank'
+              >
+                <FaGlobe /> Celestech
+              </SocialIconLinkWithText>
             </FooterLinkItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>
