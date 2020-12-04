@@ -1,6 +1,25 @@
-import ImgSrc from '../../images/BlogSection.svg';
+import BlogImgSrc from '../../images/BlogSection.svg';
+import TeamImgSrc from '../../images/teamSection.svg';
 export const BlogSectionData = {
   lightBg: true,
-  ImgSrc,
+  // content
+  h1: 'Check out our',
+  h1Mark: 'blogs',
+  description: `Lorem ipsum dolor sit, amet consectetur adipisicing.Neque molestias
+                ullam, similique quidem suscipit.`,
+  // svg image
+  ImgSrc: BlogImgSrc,
+  alt: 'Blogging',
+};
+
+export const TeamSectionData = {
+  lightBg: true,
+  // content
+  h1: 'Meet our',
+  h1Mark: 'Team',
+  description: `Lorem ipsum dolor sit, amet consectetur adipisicing.Neque molestias
+                ullam.`,
+  // svg image
+  ImgSrc: TeamImgSrc,
   alt: 'Blogging',
 };

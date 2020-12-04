@@ -12,7 +12,7 @@ import {
 import EventSection from '../components/Events';
 import BlogSection from '../components/BlogSection';
 import Footer from '../components/Footer';
-import { BlogSectionData } from '../components/BlogSection/data';
+import { BlogSectionData, TeamSectionData } from '../components/BlogSection/data';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,6 +30,7 @@ const Home = () => {
       <EventSection />
       <InfoSection {...AnnualReportSectionData2} />
       <BlogSection {...BlogSectionData}/>
+      <BlogSection {...TeamSectionData}/>
       <Footer />
     </>
   );

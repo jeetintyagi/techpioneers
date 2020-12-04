@@ -14,7 +14,7 @@ import {
 } from './BlogElements';
 import { ButtonRouter } from '../ButtonRouter';
 
-const BlogSection = ({ lightBg, ImgSrc, alt }) => {
+const BlogSection = ({ lightBg,h1,h1Mark,description, ImgSrc, alt }) => {
   const [hover, setHover] = useState(false);
 
   const onHover = () => {
@@ -26,11 +26,10 @@ const BlogSection = ({ lightBg, ImgSrc, alt }) => {
       <BlogWrapper>
         <BlogContent>
           <BlogH1>
-            Check out our <Mark>blogs</Mark>
+            {h1} <Mark>{h1Mark}</Mark>
           </BlogH1>
           <BlogP>
-            Lorem ipsum dolor sit, amet consectetur adipisicing.Neque molestias
-            ullam, similique quidem suscipit.
+            {description}
           </BlogP>
           <BlogBtnWrapper>
             <ButtonRouter
