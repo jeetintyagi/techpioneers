@@ -19,7 +19,7 @@ export const EventsContainer = styled.div`
 
 export const EventsHeading = styled.h1`
   font-size: 2.5rem;
-  color: #F86252;
+  color: #f86252;
   margin-bottom: 64px;
 
   @media screen and (max-width: 480px) {
@@ -66,6 +66,26 @@ export const EventsCard = styled(Link)`
   }
 `;
 
+export const EventsCardWithExternalLink = styled.a`
+  background: #fbfbfb;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 10px;
+  max-height: 340px;
+  padding: 30px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+
+  &:hover {
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 20px #515151;
+    cursor: pointer;
+  }
+`;
+
 export const EventsIcon = styled.img`
   height: 160px;
   width: 160px;
@@ -82,6 +102,5 @@ export const EventsCaption = styled.h2`
 export const EventsP = styled.p`
   color: #010606;
   font-size: 1rem;
-  text-align: center;
   font-weight: 400px;
 `;
