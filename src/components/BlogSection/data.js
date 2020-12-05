@@ -7,7 +7,7 @@ export const BlogSectionData = {
   h1Mark: 'blogs',
   description: `Lorem ipsum dolor sit, amet consectetur adipisicing.Neque molestias
                 ullam, similique quidem suscipit.`,
-  to:'/teams',
+  to:'/blogs',
   
   // svg image
   ImgSrc: BlogImgSrc,
