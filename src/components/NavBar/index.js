@@ -9,6 +9,7 @@ import {
   NavItem,
   NavMenu,
   NavLinks,
+  NavLinkToExternalSite,
   ImgWrap,
   Img,
   // NavBtn,
@@ -101,14 +102,15 @@ const NavBar = ({ toggleSideBar }) => {
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks
+              <NavLinkToExternalSite
                 scrollNav={scrollNav}
                 exact={true}
                 activeClassName='active'
-                to='/celestech'
+                href='https://celestech.live/'
+                target='_blank'
               >
                 Celestech
-              </NavLinks>
+              </NavLinkToExternalSite>
             </NavItem>
           </NavMenu>
           {/* <NavBtn>

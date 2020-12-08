@@ -93,6 +93,29 @@ export const NavLinks = styled(LinkR)`
   }
 `;
 
+export const NavLinkToExternalSite = styled.a`
+  color: ${({ scrollNav }) => (scrollNav ? '#010606' : '#fbfbfb')};
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+  font-weight: bold;
+
+  &:hover {
+    border-bottom: 3px solid #f86252;
+  }
+
+  &.active {
+    border-bottom: 3px solid #f86252;
+  }
+
+  @media (max-width: 1425px) {
+    color: #010606;
+  }
+`;
+
 export const NavBtn = styled.nav`
   display: flex;
 
