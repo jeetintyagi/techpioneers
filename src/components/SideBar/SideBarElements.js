@@ -65,7 +65,28 @@ export const SideBarLink = styled(LinkR)`
 
   &:hover,
   :active {
-    color: #f86252;
+    ${'' /* color: #f86252; */}
+    font-size: 1.8rem; // #comment it if you don't like this kinda effect
+    ${'' /* border-bottom: 3px solid #F86252; */}
+    transition: 0.2s ease-in-out;
+  }
+`;
+export const SideBarLinkToExternalSite = styled.a`
+  color: #010606;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  list-style: none;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+
+  &:hover,
+  :active {
+    ${'' /* color: #f86252; */}
     font-size: 1.8rem; // #comment it if you don't like this kinda effect
     ${'' /* border-bottom: 3px solid #F86252; */}
     transition: 0.2s ease-in-out;
@@ -100,9 +121,6 @@ export const SideBarRoute = styled(LinkR)`
 export const AboutIcon = styled(MdInfo)`
   font-size: 20px;
   margin-right: 10px;
-  &:hover {
-    color: #010606;
-  }
 `;
 
 export const EventsIcon = styled(MdEvent)`
