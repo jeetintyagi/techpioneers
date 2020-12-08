@@ -81,7 +81,12 @@ export const NavLinks = styled(LinkR)`
   font-weight: bold;
 
   &:hover {
+    color: #f86252;
     border-bottom: 3px solid #f86252;
+    /* Will override color (regardless of order) */
+    ${'' /* -webkit-text-fill-color: white;  */}
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #f86252;
   }
 
   &.active {
