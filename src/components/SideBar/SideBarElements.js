@@ -13,11 +13,18 @@ export const SideBarContainer = styled.aside`
   background: #f0f0f0;
   display: grid;
   align-items: center;
-  transition: 0.3s ease-in-out;
+  transition: ease-in-out 0.3s, opacity 0.5s;
+  -webkit-transition: ease-in-out 0.25s, opacity 0.5s;
+  ${'' /* transition:  opacity 0.5s,width 0.1s 0.5s, height 0.1s 0.5s; */}
   top: 0;
   right: 0;
   opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
-  top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
+
+  /* 
+  change "right" to "top" if you want the transition from top
+  like falling down 
+   */
+  right: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
   z-index: 999;
 `;
 
