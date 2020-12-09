@@ -23,7 +23,8 @@ const NavBar = ({ toggleSideBar }) => {
   const changeNav = () => {
     if (
       window.scrollY >= 80 ||
-      window.location.href === 'http://localhost:3000/blogs'
+      window.location.href === 'http://localhost:3000/blogs' ||
+      window.location.href === 'http://localhost:3000/team'
     ) {
       setScrollNav(true);
     } else {
