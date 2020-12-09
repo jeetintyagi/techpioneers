@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const ProfileCardContainer = styled.section`
-  ${'' /* height: 900px; */}
   margin: 200px 0 200px 0;
   display: flex;
   flex-direction: column;
@@ -10,12 +9,12 @@ export const ProfileCardContainer = styled.section`
   align-items: center;
   background: #fff;
 
-  @media screen and (max-width: 768px) {
+  ${'' /* @media screen and (max-width: 768px) {
     height: 1100px;
   }
   @media screen and (max-width: 480px) {
     height: 1500px;
-  }
+  } */}
 `;
 
 export const ProfileCardHeading = styled.h1`
