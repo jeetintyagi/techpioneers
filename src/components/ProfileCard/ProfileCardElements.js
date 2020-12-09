@@ -9,21 +9,43 @@ export const ProfileCardContainer = styled.section`
   align-items: center;
   background: #fff;
 
-  ${'' /* @media screen and (max-width: 768px) {
+  ${
+    '' /* @media screen and (max-width: 768px) {
     height: 1100px;
   }
   @media screen and (max-width: 480px) {
     height: 1500px;
-  } */}
+  } */
+  }
 `;
 
 export const ProfileCardHeading = styled.h1`
   font-size: 2.5rem;
-  color: #f86252;
-  margin-bottom: 64px;
+  color: #010606;
+  margin-bottom: 30px;
 
-  @media screen and (max-width: 480px) {
+  @media (max-width: 480px) {
     font-size: 2rem;
+  }
+`;
+
+export const Mark = styled.mark`
+  color: #f86252;
+  background: none;
+`;
+
+export const ProfileCardSectionDescription = styled.p`
+  margin-bottom: 30px;
+  color: #010606;
+  font-size: 24px;
+  text-align: center;
+  max-width: 600px;
+
+  @media (max-width: 760px) {
+    font-size: 20px;
+  }
+  @media (max-width: 480px) {
+    font-size: 18px;
   }
 `;
 

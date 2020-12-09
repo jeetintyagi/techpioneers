@@ -1,6 +1,15 @@
 import AvatarImg from '../../images/Avatar.png';
 const prefix = 'mailto:';
 
+export const MentorSection = {
+  topLine: {
+    TextInBlack: 'Our ',
+    MarkText: 'Mentors',
+  },
+  description:
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum possimus quos unde eveniet.',
+};
+
 export const MentorDetails = [
   {
     id: 1,
