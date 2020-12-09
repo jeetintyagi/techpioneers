@@ -34,7 +34,7 @@ export const ProfileCardWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  grid-gap: 16px;
+  grid-gap: 80px;
   padding: 0 50px;
 
   @media screen and (max-width: 1000px) {
@@ -57,13 +57,13 @@ export const ProfileCard = styled(Link)`
   max-height: 400px;
   max-width: 350px;
   padding: 30px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 9px 31px rgba(0, 0, 0, 0.5);
   text-decoration: none;
 
   &:hover {
     transform: scale(1.02);
     transition: all 0.3s ease-in-out;
-    box-shadow: 0 0 20px #515151;
+    box-shadow: 0 9 31px #515151;
     cursor: pointer;
   }
 `;
