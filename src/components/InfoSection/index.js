@@ -7,6 +7,8 @@
 
 import React from 'react';
 import { ButtonRouter } from '../ButtonRouter';
+import { animateScroll as scroll } from 'react-scroll';
+
 import {
   BtnWrap,
   Column1,
@@ -41,6 +43,9 @@ const InfoSection = ({
   ImgSrc,
   alt,
 }) => {
+  const toggleToTop = () => {
+    scroll.scrollToTop();
+  };
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id}>
@@ -64,6 +69,7 @@ const InfoSection = ({
                     fontBig={fontBig}
                     pad={pad}
                     dark={dark}
+                    onClick={toggleToTop}
                   >
                     {ButtonLabel}
                   </ButtonRouter>
