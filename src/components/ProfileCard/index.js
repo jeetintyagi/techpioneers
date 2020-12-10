@@ -8,22 +8,30 @@ import {
 } from './ProfileCardElements';
 
 import ProfileCard from './ProfileCard';
-import { MentorDetails } from './data';
+import { MentorsDetails } from './data';
+import { CoreMembersDetails } from './data';
 
 const ProfileCardSection = ({ topLine, description }) => {
   return (
     <ProfileCardContainer>
       <ProfileCardHeading>
-        {topLine.TextInBlack}
+        {topLine.TextInBlack + ' '}
         <Mark>{topLine.MarkText}</Mark>{' '}
       </ProfileCardHeading>
       <ProfileCardSectionDescription>
         {description}
       </ProfileCardSectionDescription>
       <ProfileCardWrapper>
-        {MentorDetails.map((MentorDetail) => {
-          return <ProfileCard key={MentorDetail.id} {...MentorDetail} />;
-        })}
+        {topLine.TextInBlack === 'Our' &&
+          MentorsDetails.map((MentorDetail) => {
+            return <ProfileCard key={MentorDetail.id} {...MentorDetail} />;
+          })}
+        {topLine.TextInBlack === 'Core' &&
+          CoreMembersDetails.map((CoreMemberDetail) => {
+            return (
+              <ProfileCard key={CoreMemberDetail.id} {...CoreMemberDetail} />
+            );
+          })}
       </ProfileCardWrapper>
     </ProfileCardContainer>
   );
