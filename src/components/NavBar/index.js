@@ -36,14 +36,14 @@ const NavBar = ({ toggleSideBar }) => {
     window.addEventListener('scroll', changeNav);
   }, [scrollNav]);
 
-  const toggleHome = () => {
+  const toggleToTop = () => {
     scroll.scrollToTop();
   };
   return (
     <>
       <Nav scrollNav={scrollNav}>
         <NavBarContainer>
-          <NavLogo to='/' onClick={toggleHome}>
+          <NavLogo to='/' onClick={toggleToTop}>
             <ImgWrap>
               <Img src={TechPioneers} alt='TechPioneers' />
             </ImgWrap>
@@ -58,6 +58,7 @@ const NavBar = ({ toggleSideBar }) => {
                 exact={true}
                 activeClassName='active'
                 to='/about'
+                onClick={toggleToTop}
               >
                 About
               </NavLinks>
@@ -68,6 +69,7 @@ const NavBar = ({ toggleSideBar }) => {
                 exact={true}
                 activeClassName='active'
                 to='/events'
+                onClick={toggleToTop}
               >
                 Events
               </NavLinks>
@@ -78,6 +80,7 @@ const NavBar = ({ toggleSideBar }) => {
                 exact={true}
                 activeClassName='active'
                 to='/annualReport'
+                onClick={toggleToTop}
               >
                 Annual Report
               </NavLinks>
@@ -88,6 +91,7 @@ const NavBar = ({ toggleSideBar }) => {
                 exact={true}
                 activeClassName='active'
                 to='/team'
+                onClick={toggleToTop}
               >
                 Team
               </NavLinks>
@@ -97,6 +101,7 @@ const NavBar = ({ toggleSideBar }) => {
                 scrollNav={scrollNav}
                 exact={true}
                 activeClassName='active'
+                onClick={toggleToTop}
                 to='/blogs'
               >
                 Blogs
