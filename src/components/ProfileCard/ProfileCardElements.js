@@ -101,12 +101,18 @@ export const ProfileCardWithExternalLink = styled.a`
   ${'' /* padding: 30px; */}
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
   text-decoration: none;
+  transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 31px #515151;
+  cursor: pointer;
 
-  &:hover {
+  ${
+    '' /* &:hover {
     transform: scale(1.02);
     transition: all 0.3s ease-in-out;
     box-shadow: 0 0 20px #515151;
     cursor: pointer;
+  } */
   }
 `;
 

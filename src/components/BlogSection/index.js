@@ -7,6 +7,8 @@ but with a same UI layout
 */
 
 import React, { useState } from 'react';
+import { animateScroll as scroll } from 'react-scroll';
+
 import {
   BlogContainer,
   BlogWrapper,
@@ -28,7 +30,9 @@ const BlogSection = ({ lightBg, h1, h1Mark, description, to, ImgSrc, alt }) => {
   const onHover = () => {
     setHover(!hover);
   };
-
+  const toggleToTop = () => {
+    scroll.scrollToTop();
+  };
   return (
     <BlogContainer id='blogs' lightBg={lightBg}>
       <BlogWrapper>
@@ -49,6 +53,7 @@ const BlogSection = ({ lightBg, h1, h1Mark, description, to, ImgSrc, alt }) => {
               smooth={true}
               offset={-70}
               duration={500}
+              onClick={toggleToTop}
             >
               Get started {hover ? <ArrowForward /> : <ArrowRight />}
             </ButtonRouter>
