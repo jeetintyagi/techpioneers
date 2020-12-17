@@ -28,14 +28,14 @@ export const HeroContainer = styled.div`
     z-index: 2;
   }
   @media screen and (max-width: 768px) {
-    height: 900px;
+    height: 800px;
     top: -120px;
     padding: 0px 100px;
   }
-  @media screen and (max-width: 768px) {
-    height: 800px;
+  @media screen and (max-width: 480px) {
+    height: 600px;
     top: -180px;
-    padding: 0px 100px;
+    padding: 0px 50px;
   }
 `;
 
@@ -76,7 +76,7 @@ export const HeroContent = styled.div`
     padding-top: 150px;
   }
   @media (max-width: 480px) {
-    padding-top: 200px;
+    padding-top: 340px;
   }
 `;
 
