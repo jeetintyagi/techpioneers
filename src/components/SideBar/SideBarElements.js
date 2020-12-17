@@ -8,7 +8,7 @@ import { FaGlobeAmericas } from 'react-icons/fa';
 
 export const SideBarContainer = styled.aside`
   position: fixed;
-  width: 70%;
+  width: 60%;
   height: 100%;
   background: #f0f0f0;
   display: grid;
@@ -18,6 +18,7 @@ export const SideBarContainer = styled.aside`
   ${'' /* transition:  opacity 0.5s,width 0.1s 0.5s, height 0.1s 0.5s; */}
   top: 0;
   right: 0;
+  box-shadow: 0 0px 300px rgba(0, 0, 0, 0.8);
   opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
 
   /* 
@@ -26,6 +27,8 @@ export const SideBarContainer = styled.aside`
    */
   right: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
   z-index: 999;
+}
+
 `;
 
 export const CloseIcon = styled(FaTimes)`
