@@ -121,8 +121,8 @@ export const HeroBtnWrapper = styled.div`
 
 export const ChevronButtonAnime = styled(motion.i)`
   font-size: 48px;
-  color: rgb(248, 98, 82);
-
+  ${'' /* color: rgb(248, 98, 82); */}
+  color:#fff;
   @media (max-width: 768px) {
     font-size: 32px;
   }
