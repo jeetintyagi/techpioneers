@@ -8,7 +8,7 @@ import { FaGlobeAmericas } from 'react-icons/fa';
 
 export const SideBarContainer = styled.aside`
   position: fixed;
-  width: 60%;
+  width: 70%;
   height: 100%;
   background: #f0f0f0;
   display: grid;

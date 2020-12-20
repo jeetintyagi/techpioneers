@@ -4,7 +4,6 @@ import { ScrollButton } from '../ScrollButton';
 import {
   HeroContainer,
   HeroBg,
-  VideoBg,
   HeroContent,
   HeroP,
   HeroH1,
@@ -19,9 +18,7 @@ const HeroSection = () => {
     <>
       <HeroContainer>
         <HeroBg>
-          <VideoBg>
             <Slider />
-          </VideoBg>
           {/* <VideoBg autoplay loop muted src={Video} type='video/mp4' /> */}
         </HeroBg>
 

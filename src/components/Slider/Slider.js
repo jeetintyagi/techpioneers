@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
-import { wrap } from 'popmotion';
+import { wrap } from '@popmotion/popcorn';
 import { images } from './data';
 
 import {
@@ -31,19 +31,27 @@ const variants = {
   },
 };
 
-/**
- * Experimenting with distilling swipe offset and velocity into a single variable, so the
- * less distance a user has swiped, the more velocity they need to register as a swipe.
- * Should accomodate longer swipes and short flicks without having binary checks on
- * just distance thresholds and velocity > 0.
- */
-const swipeConfidenceThreshold = 10000;
-const swipePower = (offset, velocity) => {
-  return Math.abs(offset) * velocity;
+const altVariants = {
+  enter: {
+    y: -1000,
+    opacity: 0,
+  },
+  center: {
+    zIndex: 1,
+    y: 0,
+    opacity: 1,
+  },
+  exit: {
+    zIndex: 0,
+    y: -1000,
+    opacity: 0,
+  },
 };
 
 const Slider = () => {
   const [[page, direction], setPage] = useState([0, 0]);
+  const [isShowingStates, setIsShowingStates] = useState(false);
+
   const timeToChangeSliderImage = 5000;
 
   useEffect(() => {
@@ -59,6 +67,17 @@ const Slider = () => {
     };
   }, [page]);
 
+  /**
+   * Experimenting with distilling swipe offset and velocity into a single variable, so the
+   * less distance a user has swiped, the more velocity they need to register as a swipe.
+   * Should accomodate longer swipes and short flicks without having binary checks on
+   * just distance thresholds and velocity > 0.
+   */
+  const swipeConfidenceThreshold = 10000;
+  const swipePower = (offset, velocity) => {
+    return Math.abs(offset) * velocity;
+  };
+
   // We only have 3 images, but we paginate them absolutely (ie 1, 2, 3, 4, 5...) and
   // then wrap that within 0-2 to find our image ID in the array below. By passing an
   // absolute page index as the `motion` component's `key` prop, `AnimatePresence` will
@@ -72,34 +91,55 @@ const Slider = () => {
   return (
     <SliderWrapper>
       <AnimatePresence initial={false} custom={direction}>
-        <SliderImages
-          key={page}
-          src={images[imageIndex]}
-          custom={direction}
-          variants={variants}
-          initial='enter'
-          animate='center'
-          exit='exit'
-          transition={{
-            x: { type: 'spring', stiffness: 300, damping: 30 },
-            opacity: { duration: 0.2 },
-          }}
-          drag='x'
-          dragConstraints={{ left: 0, right: 0 }}
-          dragElastic={1}
-          onDragEnd={(e, { offset, velocity }) => {
-            const swipe = swipePower(offset.x, velocity.x);
+        {!isShowingStates ? (
+          <SliderImages
+            key={page}
+            src={images[imageIndex]}
+            custom={direction}
+            variants={variants}
+            initial='enter'
+            animate='center'
+            exit='exit'
+            transition={{
+              x: { type: 'spring', stiffness: 300, damping: 30 },
+              opacity: { duration: 0.2 },
+            }}
+            drag='x'
+            dragConstraints={{ left: 0, right: 0 }}
+            dragElastic={1}
+            onDragEnd={(e, { offset, velocity }) => {
+              const swipe = swipePower(offset.x, velocity.x);
 
-            if (swipe < -swipeConfidenceThreshold) {
-              paginate(1);
-            } else if (swipe > swipeConfidenceThreshold) {
-              paginate(-1);
-            }
-          }}
-        />
+              if (swipe < -swipeConfidenceThreshold) {
+                paginate(1);
+              } else if (swipe > swipeConfidenceThreshold) {
+                paginate(-1);
+              }
+            }}
+          />
+        ) : (
+          <SliderImages
+            key='base'
+            src={images[1]}
+            variants={altVariants}
+            initial='enter'
+            animate='center'
+            exit='exit'
+            transition={{
+              x: { type: 'spring', stiffness: 300, damping: 200 },
+              opacity: { duration: 0.2 },
+            }}
+          />
+        )}
       </AnimatePresence>
-      <SliderNextButton onClick={() => paginate(1)}>{'‣'}</SliderNextButton>
+      {/* <SliderNextButton onClick={() => paginate(1)}>{'‣'}</SliderNextButton>
       <SliderPrevButton onClick={() => paginate(-1)}>{'‣'}</SliderPrevButton>
+      <button
+        style={{ position: 'absolute', top: '30px' }}
+        onClick={() => setIsShowingStates(!isShowingStates)}
+      >
+        {'Swap'}
+      </button> */}
     </SliderWrapper>
   );
 };
