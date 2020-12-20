@@ -46,7 +46,7 @@ const HeroSection = () => {
             >
               <ChevronButtonAnime
                 initial={{ y: 10, opacity: 1, scale: 1 }}
-                animate={{ y: -10, opacity: 0.2, scale: 1 }}
+                animate={{ y: -10, opacity: 0.6, scale: 1 }}
                 whileHover={{ opacity: 1 }}
                 transition={{
                   type: 'tween',

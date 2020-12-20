@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 
 export const ButtonRouter = styled(Link)`
   border-radius: 50px;
+  ${'' /* background: #f86252; */}
   background: ${({ primary }) =>
     primary
       ? '#01BF71'

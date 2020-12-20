@@ -95,8 +95,26 @@ export const HeroH1 = styled.h1`
 `;
 
 export const Mark = styled.mark`
-  color: #f86252;
-  background: none;
+  ${'' /* color: #f86252; */}
+
+  /* Create the gradient. */
+  background-image: linear-gradient(
+    90deg,
+    rgba(248, 98, 82, 1) 40%,
+    rgba(252, 176, 69, 1) 100%
+  );
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  font-weight: 900;
 `;
 
 export const HeroP = styled.p`
@@ -117,12 +135,18 @@ export const HeroP = styled.p`
 export const HeroBtnWrapper = styled.div`
   margin-top: 32px;
   display: flex;
+
+  @media (min-width: 1500px) {
+    position: absolute;
+    margin-top: 500px;
+  }
 `;
 
 export const ChevronButtonAnime = styled(motion.i)`
   font-size: 48px;
-  ${'' /* color: rgb(248, 98, 82); */}
-  color:#fff;
+  color: rgb(248, 98, 82);
+  ${'' /* color:#fff; */}
+
   @media (max-width: 768px) {
     font-size: 32px;
   }

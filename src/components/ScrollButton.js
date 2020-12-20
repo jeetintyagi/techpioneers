@@ -3,6 +3,8 @@ import { Link as LinkScroll } from 'react-scroll';
 
 export const ScrollButton = styled(LinkScroll)`
   border-radius: 50px;
+  ${'' /* background: #f86252; */}
+
   background: ${({ primary }) =>
     primary
       ? '#01BF71'
