@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Slider from '../Slider/Slider';
 import { ScrollButton } from '../ScrollButton';
 import {
@@ -14,9 +14,7 @@ import {
 import { BsChevronDoubleDown } from 'react-icons/bs';
 
 const HeroSection = () => {
-  useEffect(() => {
-    document.title = 'TechPioneers | Home';
-  }, []);
+
   return (
     <>
       <HeroContainer>
