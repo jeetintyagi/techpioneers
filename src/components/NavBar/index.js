@@ -19,13 +19,8 @@ import TechPioneers from '../../images/Techpioneers.png';
 
 const NavBar = ({ toggleSideBar }) => {
   const [scrollNav, setScrollNav] = useState(false);
-
   const changeNav = () => {
-    if (
-      window.scrollY >= 80 ||
-      window.location.href === 'http://localhost:3000/blogs' ||
-      window.location.href === 'http://localhost:3000/team'
-    ) {
+    if (window.scrollY >= 80) {
       setScrollNav(true);
     } else {
       setScrollNav(false);
@@ -33,7 +28,11 @@ const NavBar = ({ toggleSideBar }) => {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', changeNav);
+    if (window.location.href === 'http://localhost:3000/') {
+      window.addEventListener('scroll', changeNav);
+    } else {
+      setScrollNav(true);
+    }
   }, [scrollNav]);
 
   const toggleToTop = () => {
