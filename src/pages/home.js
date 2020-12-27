@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import SideBar from '../components/SideBar/index';
 import NavBar from '../components/NavBar/index';
 import HeroSection from '../components/HeroSection';
@@ -19,7 +19,9 @@ import {
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  useEffect(() => {
+    document.title = 'TechPioneers | Home';
+  }, []);
   const toggleSideBar = () => {
     setIsOpen(!isOpen);
   };

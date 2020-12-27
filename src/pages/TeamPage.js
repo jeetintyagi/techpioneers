@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import NavBar from '../components/NavBar';
 import SideBar from '../components/SideBar';
 import Footer from '../components/Footer';
@@ -10,7 +10,9 @@ import {
 
 const TeamPage = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  useEffect(() => {
+    document.title = 'TechPioneers | Team';
+  }, []);
   const toggleSideBar = () => {
     setIsOpen(!isOpen);
   };
