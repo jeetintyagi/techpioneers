@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   ProfileCardContainer,
   ProfileCardHeading,
@@ -12,6 +12,9 @@ import { MentorsDetails } from './data';
 import { CoreMembersDetails } from './data';
 
 const ProfileCardSection = ({ topLine, description }) => {
+  useEffect(() => {
+    document.title = 'TechPioneers | Team';
+  }, []);
   return (
     <ProfileCardContainer>
       <ProfileCardHeading>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Slider from '../Slider/Slider';
 import { ScrollButton } from '../ScrollButton';
 import {
@@ -14,11 +14,14 @@ import {
 import { BsChevronDoubleDown } from 'react-icons/bs';
 
 const HeroSection = () => {
+  useEffect(() => {
+    document.title = 'TechPioneers | Home';
+  }, []);
   return (
     <>
       <HeroContainer>
         <HeroBg>
-            <Slider />
+          <Slider />
           {/* <VideoBg autoplay loop muted src={Video} type='video/mp4' /> */}
         </HeroBg>
 
