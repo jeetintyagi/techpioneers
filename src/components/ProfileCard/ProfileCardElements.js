@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
 export const ProfileCardContainer = styled.section`
   margin: 200px 0 200px 0;
@@ -65,27 +64,6 @@ export const ProfileCardWrapper = styled.div`
   @media screen and (max-width: 760px) {
     grid-template-columns: 1fr;
     padding: 0 20px;
-  }
-`;
-
-export const ProfileCard = styled(Link)`
-  background: #fbfbfb;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  border-radius: 10px;
-  max-height: 400px;
-  max-width: 350px;
-  padding: 30px;
-  box-shadow: 0 9px 31px rgba(0, 0, 0, 0.5);
-  text-decoration: none;
-
-  &:hover {
-    transform: scale(1.02);
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 9 31px #515151;
-    cursor: pointer;
   }
 `;
 
