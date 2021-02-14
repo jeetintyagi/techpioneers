@@ -8,7 +8,7 @@ export const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 150px 100px;
-  height: 1000px;
+  height: 1000px;          // COULD BE ISSUE WORTH  
   position: relative;
   z-index: 1;
 
@@ -71,10 +71,17 @@ export const HeroContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: -350px;
+
+  @media (max-width: 980px) {
+    margin-top: 0px;
+  }
 
   @media (max-width: 768px) {
+    margin-top: 0px;
     padding-top: 150px;
   }
+
   @media (max-width: 480px) {
     padding-top: 340px;
   }

@@ -11,6 +11,7 @@ export const BlogContainer = styled.div`
   }
 
   @media screen and (max-width: 480px) {
+    margin-top: 80px;
     padding: 0px 0;
   }
 `;
